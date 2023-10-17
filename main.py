@@ -1,16 +1,41 @@
-# This is a sample Python script.
+# 2.1
+# Первое задание
+name = "Яндекс"
+print(f'Привет, {name}!')
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Второе задание
+print('Как Вас зовут?')
+name = input()
+print('Привет,', name)
 
+# Третье задание
+message = input()
+print(f'{message}')
+print(f'{message}')
+print(f'{message}')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Четвертое задание
+m = int(input())
+s = 2.5 * 38
+print(int(m - s))
 
+# Пятое задание
+cena = int(input())
+ves = int(input())
+many = int(input())
+summa = (many - (cena * ves))
+print(summa)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Шестое задание
+tovar = input()
+cena = int(input())
+ves = int(input())
+many = int(input())
+itog = cena * ves
+sdacha = many - itog
+print(f"Чек\n{tovar} - {ves}кг - {cena}руб/кг")
+print(f"Итого: {itog}руб\nВнесено: {many}руб\nСдача: {sdacha}руб")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Седьмое задание
+number = int(input())
+print("Купи слона!\n" * number)
