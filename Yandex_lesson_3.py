@@ -95,3 +95,106 @@
 #     spisok_number.append(chislo[i])
 # summa = list(map(int, spisok_number))
 # print(sum(summa))
+
+# Задание_12
+# chislo = input()
+# spisok_number = []
+# for i in range(len(chislo)):
+#     spisok_number.append(chislo[i])
+# maximum = max(list(map(int, spisok_number)))
+# print(maximum)
+
+# Задание_13
+# number = int(input())
+# first_gamer = input()
+# first_gamer_two = ""
+# i = 1
+# while i < number:
+#     first_gamer_two = input()
+#     if first_gamer_two < first_gamer:
+#         first_gamer = first_gamer_two
+#     i +=1
+# print(first_gamer)
+
+# # Задание_14
+# number = int(input())
+# otvet = True
+# i = 2
+
+# if number == 1:
+#     print("NO")
+# elif number == 2 or number == 3:
+#     print("YES")
+# else:
+#     while i ** 2 < number or i ** 2 == number:
+#         if number % i == 0:
+#             otvet = False
+#             break
+#         else:
+#             i += 1
+#
+#     if otvet is True:
+#         print("YES")
+#     else:
+#         print("NO")
+
+# Задание_15
+# number = int(input())
+# i = 0
+# count = 0
+# stroka = ""
+# while i < number:
+#     stroka = input()
+#     if "зайка" in stroka:
+#         count += 1
+#     i += 1
+# print(count)
+
+# # Задание_16
+# number = input()
+# if number[::1] == number[::-1]:
+#     print("YES")
+# else:
+#     print("NO")
+
+# Задание_17
+# number = input()
+# number_list = []
+# for i in range(len(number)):
+#     number_list.append(number[i])
+# number_list = list(map(int, number_list))
+#
+# for chislo in number_list[:]:
+#     if chislo % 2 == 0:
+#         number_list.remove(chislo)
+# str_number_list = [str(n) for n in number_list]
+# str_number_list = "".join(str_number_list)
+# print(str_number_list)
+
+# Задание_18
+# number = int(input())
+# list = []
+# d = 2
+# while d ** 2 <= number:
+#     if number % d == 0:
+#         list.append(d)
+#         number //= d
+#     else:
+#         d +=1
+# if number > 1:
+#     list.append(number)
+# print(" * ".join(str(ls) for ls in list))
+
+# Задание_19
+chislo = int(input())
+i = 0
+while i < 10:
+    number = int(input())
+    if number < chislo:
+        print("Больше")
+    elif number > chislo:
+        print("Меньше")
+    else:
+        print("Угадал!")
+        break
+    i += 1
