@@ -202,3 +202,76 @@
 #         k = k + M + 1
 
 # Задание 15
+# height = int(input())
+# width = int(input())
+# number = height * width
+
+# temp = 1
+# step_2 = 1
+# step = height * 2 - 1
+# for i in range(1, height + 1):
+#     for j in range(1, width + 1):
+#         if j % 2 != 0:
+#             if number < 10:
+#                 print('{:}'.format(temp), end=" ")
+#             elif number > 9 and number < 100:
+#                 print('{:2}'.format(temp), end=" ")
+#             else:
+#                 print('{:3}'.format(temp), end=" ")
+#             temp += step
+#         else:
+#             if number < 10:
+#                 print('{:}'.format(temp), end=" ")
+#             elif number > 9 and number < 100:
+#                 print('{:2}'.format(temp), end=" ")
+#             else:
+#                 print('{:3}'.format(temp), end=" ")
+#             temp += step_2
+#     step_2 += 2
+#     temp = i + 1
+#     step -= 2
+#     print()
+
+# Задание 16 НЕ ДОДЕЛАЛ!!!!!!!!!!!!!!!!!!!!
+# N = int(input())
+# M = int(input())
+# for i in range(1, N + 1):
+#     for j in range(1, M + 1):
+#         t = i * j
+#         print('{:2}'.format(t), end= " |")
+#     print()
+#     print("-" * ( N * (M + 1) - 1))   
+
+    
+# Задание 17
+# chislo = int(input())
+# i = 0
+# count = 0
+# while i < chislo:
+#     number = input()
+#     if number == number[::-1]:
+#         count += 1
+#     i += 1
+# print(count)   
+
+# Задание 18
+
+n = int(input())
+m = (-1 + (1 + 8 * n) ** 0.5) / 2
+m = int(-1 * m // 1 * -1)
+
+c = 0
+elka = [[0] * i for i in range(1, m + 1)]
+
+for i in range(m):
+    for j in range(0, i + 1):
+        if c < n:
+            c += 1
+            elka[i][j] = c
+        else:
+            elka[-1].remove(0)
+
+max_len = len(str(' '.join(map(str, elka[-1]))))
+
+for row in elka:
+    print('{:^{width}}'.format((' '.join(map(str, row))), width=max_len))
