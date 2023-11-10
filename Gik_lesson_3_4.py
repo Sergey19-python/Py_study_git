@@ -33,32 +33,32 @@
 # number = maximum(5,8,99)
 # print(number)
 
-#Задача_3
-name_igrok = input("Введите имя игрока: ")
-igrok = {
-    "name":name_igrok,
-    "health":100,
-    "damage":50, 
-    "armor":1.2
-}
+# #Задача_3
+# name_igrok = input("Введите имя игрока: ")
+# igrok = {
+#     "name":name_igrok,
+#     "health":100,
+#     "damage":50, 
+#     "armor":1.2
+# }
 
-name_vrag = input("Введите имя врага: ")
-vrag = {
-    "name":name_vrag,
-    "health":100,
-    "damage":50,
-    "armor":1.4
-}
+# name_vrag = input("Введите имя врага: ")
+# vrag = {
+#     "name":name_vrag,
+#     "health":100,
+#     "damage":50,
+#     "armor":1.4
+# }
 
-def bron(napad, otraz):
-    return napad / otraz
+# def bron(napad, otraz):
+#     return napad / otraz
 
-def attak(napad, otraz):
-    otraz["health"] -= bron(napad["damage"], otraz["armor"])
+# def attak(napad, otraz):
+#     otraz["health"] -= bron(napad["damage"], otraz["armor"])
 
 
-attak(napad=vrag, otraz=igrok)
-print(igrok)
+# attak(napad=vrag, otraz=igrok)
+# print(igrok)
 
-attak(napad=igrok, otraz=vrag)
-print(vrag)
+# attak(napad=igrok, otraz=vrag)
+# print(vrag)
